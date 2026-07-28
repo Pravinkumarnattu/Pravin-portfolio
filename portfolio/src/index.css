@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 88px;
+}
+
+body {
+  @apply bg-void text-ink font-body antialiased;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.light {
+  @apply bg-paper text-paper-ink;
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.35);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #10B981, #3B82F6);
+  border-radius: 999px;
+}
+
+/* focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #10B981;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Glassmorphism surface */
+.glass {
+  background: rgba(255, 255, 255, 0.045);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body.light .glass {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(11, 17, 32, 0.08);
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(120deg, #10B981 0%, #3B82F6 60%, #6366F1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.font-mono-caption {
+  letter-spacing: 0.14em;
+}
+
+/* Light-mode overrides for fixed dark-mode utility colors.
+   The palette is authored dark-first (brief: dark mode by default),
+   so light mode remaps the same semantic classes rather than
+   duplicating markup with dark: variants everywhere. */
+body.light .text-ink { color: #0B1120; }
+body.light .text-ink-muted { color: #5B6472; }
+body.light .text-ink-faint { color: #8891A0; }
+body.light .bg-void { background-color: #F8FAF9; }
+body.light .bg-surface,
+body.light .bg-surface-light { background-color: #FFFFFF; }
+body.light .border-white\/10 { border-color: rgba(11, 17, 32, 0.08); }
+body.light .border-white\/5 { border-color: rgba(11, 17, 32, 0.06); }
+body.light .grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(11, 17, 32, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(11, 17, 32, 0.05) 1px, transparent 1px);
+}
+
+/* Container */
+.container-px {
+  @apply px-6 sm:px-8 lg:px-12;
+}
+
+.section-pad {
+  @apply py-24 sm:py-28 lg:py-32;
+}

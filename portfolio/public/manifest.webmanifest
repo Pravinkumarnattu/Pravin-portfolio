@@ -1,0 +1,12 @@
+{
+  "name": "Pravin Kumar M | Full Stack MERN Developer",
+  "short_name": "Pravin Kumar",
+  "description": "Portfolio of Pravin Kumar M, Full Stack MERN Developer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05070A",
+  "theme_color": "#05070A",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
