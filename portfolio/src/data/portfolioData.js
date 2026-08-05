@@ -111,7 +111,7 @@ export const projects = [
     title: "Food Waste Exchange",
     category: "Full Stack",
     date: "July 2026",
-    image: null,
+    image: "/Food_waste_exchange.png",
     description:
       "A multi-role MERN platform connecting food donors, NGOs, and volunteers — reducing food waste through coordinated, real-time donation logistics.",
     features: [
@@ -139,7 +139,7 @@ export const projects = [
     id: "truthlens",
     title: "TruthLens",
     category: "Full Stack",
-    date: "2026",
+    date: "April 2026",
     image: "/Truthlens.png",
     description:
       "A fact-checking and misinformation-detection web app built on the MERN stack, designed to help users verify claims quickly and transparently.",
