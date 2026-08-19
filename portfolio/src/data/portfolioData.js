@@ -56,7 +56,7 @@ export const skills = {
     { name: "React.js", level: 88 },
     { name: "React Router", level: 85 },
     { name: "Responsive Web Design", level: 90 },
-    { name: "Bootstrap", level: 82 },
+    { name: "Bootstrap", level: 50 },
     { name: "DOM Manipulation", level: 85 },
   ],
   Backend: [
@@ -132,7 +132,7 @@ export const projects = [
       "JS-Cookie",
     ],
     github: "https://github.com/Pravinkumarnattu/Food-Waste-Exchange",
-    demo: "",
+    demo: "https://food-waste-exchange-app.vercel.app",
     featured: true,
   },
   {
