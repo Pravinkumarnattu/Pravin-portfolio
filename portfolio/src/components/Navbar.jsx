@@ -29,14 +29,26 @@ export default function Navbar() {
   }, []);
 
   const goToSection = (id) => {
+    const wasOpen = open;
     setOpen(false);
-    if (location.pathname !== "/") {
-      navigate("/");
-      setTimeout(() => {
+
+    const scroll = () => {
+      if (location.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => {
+          document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+        }, 80);
+      } else {
         document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-      }, 60);
+      }
+    };
+
+    if (wasOpen) {
+      // wait for the mobile menu's exit animation (duration: 0.3) to finish
+      // before scrolling, so the two animations don't collide on mobile
+      setTimeout(scroll, 320);
     } else {
-      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      scroll();
     }
   };
 
