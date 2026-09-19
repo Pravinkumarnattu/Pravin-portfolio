@@ -83,7 +83,7 @@ export default function ResumeSection() {
                 loading="lazy"
               /> */}
               <iframe
-                src="https://drive.google.com/uc?export=download&id=1EMV1cwOvS9mBb5ga7XpAK4E6EvrBKYjS"
+                src="https://drive.google.com/file/d/1EMV1cwOvS9mBb5ga7XpAK4E6EvrBKYjS/preview"
                 title="Resume preview"
                 className="w-full h-full"
                 loading="lazy"

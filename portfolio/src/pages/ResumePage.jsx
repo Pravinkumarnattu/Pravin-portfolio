@@ -54,7 +54,7 @@ export default function ResumePage() {
               className="w-full h-full"
             /> */}
             <iframe
-              src="https://drive.google.com/uc?export=download&id=1EMV1cwOvS9mBb5ga7XpAK4E6EvrBKYjS"
+              src="https://drive.google.com/file/d/1EMV1cwOvS9mBb5ga7XpAK4E6EvrBKYjS/preview"
               title="Pravin Kumar M — Resume"
               className="w-full h-full"
             />
