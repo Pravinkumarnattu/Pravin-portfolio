@@ -54,7 +54,7 @@ export default function ResumePage() {
               className="w-full h-full"
             /> */}
             <iframe
-              src="https://docs.google.com/viewer?url=https://pravinkumar-dev.vercel.app/resume.pdf&embedded=true"
+              src="https://drive.google.com/uc?export=download&id=1EMV1cwOvS9mBb5ga7XpAK4E6EvrBKYjS"
               title="Pravin Kumar M — Resume"
               className="w-full h-full"
             />
