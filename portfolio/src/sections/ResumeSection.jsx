@@ -83,7 +83,7 @@ export default function ResumeSection() {
                 loading="lazy"
               /> */}
               <iframe
-                src="https://docs.google.com/viewer?url=https://pravinkumar-dev.vercel.app/resume.pdf&embedded=true"
+                src="https://drive.google.com/uc?export=download&id=1EMV1cwOvS9mBb5ga7XpAK4E6EvrBKYjS"
                 title="Resume preview"
                 className="w-full h-full"
                 loading="lazy"
